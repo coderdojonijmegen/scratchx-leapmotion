@@ -1,0 +1,153 @@
+<html>
+<head>
+<title>ScratchX-LeapMotion</title>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans"
+	rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://coderdojonijmegen.github.io/instructies_voor_mentoren/style.css">
+</head>
+<body>
+	<div class="content">
+
+		<h1>ScratchX-LeapMotion</h1>
+
+		<div id="inhoud">
+			<h2>Inhoud</h2>
+			<ul class="inhoud">
+				<li><a href="#introductie">Introductie</a></li>
+				<li><a href="#benodigdheden">Benodigdheden</a></li>
+				<li><a href="#stappen">Stappen</a></li>
+				<li><a href="#conclusie">Conclusie</a></li>
+			</ul>
+		</div>
+
+		<div id="introductie">
+			<div class="terug">
+				<a title="terug naar inhoud" href="#inhoud"><i class="material-icons">arrow_upward</i></a>
+			</div>
+			<h2>Introductie</h2>
+			<p><strong>ScratchX</strong> is een variant van Scratch waarmee je hardware kunt aansturen.</p>
+			<p><strong>LeapMotion</strong> is een apparaatje dat de bewegingen van je hand 'begrijpt' en kan volgen.</p>
+			<p>Deze instructie leert je hoe je Scratch en LeapMotion kunt combineren.</p>
+		</div>
+
+		<div id="benodigdheden">
+			<div class="terug">
+				<a title="terug naar inhoud" href="#inhoud"><i class="material-icons">arrow_upward</i></a>
+			</div>
+			<h2>Benodigdheden</h2>
+			<p>
+			Om de instructie te volgen, heb je het volgende nodig:
+			</p>
+			<ul>
+				<li>Een Leap Motion handsensor (en laptop)</li>
+				<li><a href="https://www.leapmotion.com/setup/desktop/windows" target="_blank" rel="noopener noreferrer">LeapMotion software</a> ge&iuml;nstalleerd</li>
+				<li><a href="https://scratch.mit.edu/info/ext_download/"  rel="noopener noreferrer">ScratchX browser plugin</a> ge&iuml;nstalleerd</li>
+			</ul>
+			<p>Ga naar <a href="http://scratchx.org/" target="_blank" rel="noopener noreferrer">https://scratchx.org</a> om aan de stappen te beginnen (Kies voor <i>See all extensions</i>&nbsp;&nbsp;&gt; <i>Leapmotion</i>).
+		</div>
+
+		<div id="stappen">
+			<div class="terug">
+				<a title="terug naar inhoud" href="#inhoud"><i class="material-icons">arrow_upward</i></a>
+			</div>
+			<h2>Stappen</h2>
+			<div id="assenstelsel">
+				<div class="terug">
+					<a title="terug naar inhoud" href="#inhoud"><i class="material-icons">arrow_upward</i></a>
+				</div>
+				<h3>Assenstelsel</h3>
+				<p>
+				Ooit van een assenstelsel gehoord? In Scratch wordt een assenstelsel gebruikt om de plaats van een plaatje of muispointer aan te geven. Daarvoor worden de getallen op de x- en y-as gebruikt:
+				</p>
+				<div class="gecentreerd"><img src="images/axis.png" height="300px"/>&nbsp;<img src="images/axis-movement.png" height="300px"/></div>
+				<p>
+					<ul>
+						<li>Verplaatst iets zich van boven naar beneden, dan verandert de positie op de y-as.</li>
+						<li>Verplaatst iets zich van links naar rechts, dan verandert de positie op de x-as.</li>
+					</ul>
+				</p>
+			</div>
+			<div id="leapmotion">
+				<div class="terug">
+					<a title="terug naar inhoud" href="#inhoud"><i class="material-icons">arrow_upward</i></a>
+				</div>
+				<h3>Leap Motion</h3>
+				<p>Met Leap Motion kun je zien hoe dat werkt. Kies een afbeelding in Scratch en maak de volgende blokken:</p>
+				<div class="gecentreerd"><img src="images/blocks-draw-hand-position.png" /></div>
+				<p><strong>TIP:</strong> Om bovenstaande blokken te maken heb je <i>variabelen</i> nodig. Een variabele met de naam <strong>x</strong> en een variabele met de naam <strong>y</strong></p>
+			</div>
+			<div id="testen">
+				<div class="terug">
+					<a title="terug naar inhoud" href="#inhoud"><i class="material-icons">arrow_upward</i></a>
+				</div>
+				<h3>Testen</h3>
+				<p>Klik op het vlaggetje om je programma te starten en houdt je hand boven de sensor.</p>
+				<p>Je ziet nu de getallen (x en y) in de oranje vakjes veranderen. Je plaatje beweegt nog niet. Maar de getallen die je ziet, kun je gebruiken om jouw afbeelding van plaats te veranderen.</p>
+				<p>Je gebruikt daarvoor het volgende blok:</p>
+				<div class="gecentreerd"><img src="images/blocks-go-to-x-y.png"/></div>
+			</div>
+			<div id="afbeelding-bewegen">
+				<div class="terug">
+					<a title="terug naar inhoud" href="#inhoud"><i class="material-icons">arrow_upward</i></a>
+				</div>
+				<h3>Afbeelding laten bewegen</h3>
+				<p>We zullen het plaatje alleen naar links en naar rechts laten bewegen. We hoeven daarom alleen de x-waarde van je plaatje te veranderen.</p>
+				<p>Selecteer je plaatje en maak:</p>
+				<div class="gecentreerd"><img src="images/blocks-move-image-x-axis.png"/></div>
+				<p>Klik het vlaggetje aan om je programma te starten. Houdt vervolgens je hand boven de Leap Motion om je plaatje te bewegen.</p>
+				<p><strong>Zelf doen:</strong> laat je afbeelding ook naar boven en naar beneden bewegen (y-as)</p>
+			</div>
+
+			<div id="meer">
+				<div class="terug">
+					<a title="terug naar inhoud" href="#inhoud"><i class="material-icons">arrow_upward</i></a>
+				</div>
+				<h3>Meer met Leap Motion</h3>
+				<p>Leap Motion kan meer dan alleen de 'plaats' van je hand bepalen. Zo snapt Leap Motion ook als je een vuist maakt of als je bepaalde 'gestures' (bewegingen) maakt.</p>
+				<p>We gaan het uiterlijk van een afbeelding wisselen als je je hand opent (platte hand) of sluit (vuist).</p>
+				<p>Kies een afbeelding met twee uiterlijken (de vleermuis is een goede!)<p>
+				<p>Maak de volgende blokken:</p>
+				<div class="gecentreerd"><img src="images/blocks-change-appearence.png"/></div>
+				<p>Wat moet je doen om je programma te testen? Je programma starten en je hand openen en sluiten boven de sensor!</p>
+			</div>
+		</div>
+
+		<div id="conclusie">
+			<div class="terug">
+				<a title="terug naar inhoud" href="#inhoud"><i class="material-icons">arrow_upward</i></a>
+			</div>
+			<h2>Conclusie</h2>
+			<p>
+			Je hebt gezien hoe je afbeeldingen in Scratch kunt aansturen met Leap Motion.
+			</p>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="nijmegen">
+			<a href="https://coderdojo-nijmegen.nl"><img
+				src="https://coderdojo-nijmegen.nl/wp-content/uploads/2014/12/logo_coderdojo_nijmegen-e1419242204527.png" /></a>
+		</div>
+		<div class="github">
+			<a
+				href="https://github.com/coderdojonijmegen/scratch-art">
+				<svg aria-hidden="true" class="octicon octicon-mark-github"
+					height="24" version="1.1" viewBox="0 0 16 16" width="24">
+					<path fill-rule="evenodd"
+						d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+			</a>
+		</div>
+		<a rel="license"
+			href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img
+			alt="Creative Commons License" style="border-width: 0"
+			src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Dit
+		werk is gelicenseerd met een <a rel="license"
+			href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+			Commons Attribution-NonCommercial-ShareAlike 4.0 International
+			License</a>.
+	</div>
+	</div>
+</body>
+</html>
